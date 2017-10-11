@@ -1,0 +1,14 @@
+Los nombres de clase, variables y métodos siempre deben ser representativos, si son compuestos, la primer letra de cada palabra debe ser mayúscula.
+
+Convenios de Nombrado:
+Lon nombres de las clases y las interfaces deben ser sustantivos. Evitar abreviaturas salvo en el caso de que sean más 
+conocidas y usadas que el nombre completo.
+Los nombres de los métodos deben ser verbos y comenzar siempre con una letra minúscula.
+Las variables nunca deben comenzar con "_" ó "$" y si se refieren a una operación, utilizar mnemónicos. Si se trata de constantes,
+siempre deben estar completamente en mayúscula con sus palabras separadas por "_".
+
+Uso de Paréntesis:
+Se recomienda utilizar "()" para separar expresiones en una sentencia lógica para que quede claro el órden de precedencia de los operadores.
+
+
+
