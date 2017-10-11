@@ -1,0 +1,10 @@
+Rendimiento
+*crear o inicializar objetos solo en el momento en el que seran requeridos en el codigo para minimizar el uso de memoria de su 
+correspondiente impacto en el rendimiento.
+*las variables de una clase no deben ser publicas a menos que exista un buen motivo para ello.siempre seden definir como privadas o protegidas 
+y crear los correspondientes metodos de acceso.
+*para las variables locales siempre declararlas justo antes de ser usadas para que el codigo sea mas legible, menos propenso a errores y mantenible
+*siempre utilizar librerias estandar en lugar de desperdiciar tiempo creando propias, facilitando el reuso de codigo.
+*tener cuidado al utilizar objetos del tipo string ya que pueden afectar la memoria y reducir el rendimiento.
+*evitar sentencias "system.out" en metodos de clases 
+*siempre que se conozca iniciar las colecciones con el tamaño que van a requerir
