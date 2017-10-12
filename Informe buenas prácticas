@@ -1,35 +1,55 @@
+# H1 Buenas prácticas de la programación en Java
+
+Al crear un programa ó aplicación, hay muchas formas distintas de llegar al mismo resultado. Cada programador tiene un estilo personal
+y ha aprendido distintas técnicas de distintas fuentes. Es muy fácil aprender a programar con la variedad de cursos que existen hoy en día,
+pero el gran volúmen de aprendizaje no supervisado genera deficiencia en la calidad del software.
+
+La calidad puede medirse en 3 grandes aspectos:
+que el programa funcione
+que sea legible
+que sea mantenible
+
+En el primer punto, no hay grandes problemas, de una forma ú otra el programa cumple con su tarea. El foco está en cómo se llega a
+ese resultado. En el sistema llamado software "artesanal" el programador sigue un proceso de prueba y error constante hasta obtener el
+funcionamiento deseado y esto genera que el código sea poco legible para otros programadores ó usuarios y hace casi imposible su
+mantenibilidad.
+Para evitar estos problemas que afectan tanto el tiempo de producción como el costo y el rendimiento de la aplicación, se deben seguir
+ciertas convenciones para crear un código de buena calidad, que no sólo cumpla con su tarea sino que lo haga de la mejor forma posible.
+Estas buenas prácticas pueden dividirse en 2 grandes grupos: convenciones sobre sintaxis ó forma de escritura y convenciones sobre programación
+que influyen en el rendimiento del software
+
 
 SINTAXIS:
 
 Un código Java tiene la siguiente estructura:
 1- Comentario de comienzo
-2- Sentencias Package e import 
+2- Sentencias Package e import
 3- Declaraciones de Clases e interfaces
 
-1- Los códigos deberían comenzar con un comentario que contenga datos sobre sus caracteristicas 
+1- Los códigos deberían comenzar con un comentario que contenga datos sobre sus caracteristicas
 2- La primer línea no comentada en un código es la sentencia Package, despúes puede haber tantas sentencias import como sea necesarias
-3- Las declaraciones de clases y/o interfaces debentener el siguiente orden: 
+3- Las declaraciones de clases y/o interfaces debentener el siguiente orden:
   a) Comentario de documentación
   b) Sentencia class o interface (se recomienda una declaración por línea)
   c) Comentario sobre su implementación (si son necesarios)
-  d) Variables estáticas de clase (Public, Protected, Private).Se recomienda inicializar las variables cuando se declaran 
+  d) Variables estáticas de clase (Public, Protected, Private).Se recomienda inicializar las variables cuando se declaran
   e) Variables de instancia (Public, Protectes, Private)
-  f) Constructores 
+  f) Constructores
   g) Métodos
- 
+
  Es importante, además, respetar un estilo de indentación a lo largo de todo el código, lo cual lo hace más legible para una persona.
- No existe una covención sobre la cantidad de espacios, pero lo más usado es un tabulador de 8 espacios. 
- 
- Las sentencias return no deben usar parentesis a menos que hagan el contenido más claro para la lectura 
- 
+ No existe una covención sobre la cantidad de espacios, pero lo más usado es un tabulador de 8 espacios.
+
+ Las sentencias return no deben usar parentesis a menos que hagan el contenido más claro para la lectura
+
  Las sentencias IF siempre llevan llave {}
- 
+
  Usar líneas en blanco, separando secciones de codigo relacionadas para mejorar la lectura.
- 
+
  Los nombres de clase, variables y métodos siempre deben ser representativos, si son compuestos, la primer letra de cada palabra debe ser mayúscula.
 
 Convenios de Nombrado:
-Lon nombres de las clases y las interfaces deben ser sustantivos. Evitar abreviaturas salvo en el caso de que sean más 
+Lon nombres de las clases y las interfaces deben ser sustantivos. Evitar abreviaturas salvo en el caso de que sean más
 conocidas y usadas que el nombre completo.
 Los nombres de los métodos deben ser verbos y comenzar siempre con una letra minúscula.
 Las variables nunca deben comenzar con "_" ó "$" y si se refieren a una operación, utilizar mnemónicos. Si se trata de constantes,
@@ -40,27 +60,31 @@ Se recomienda utilizar "()" para separar expresiones en una sentencia lógica pa
 
 
 Rendimiento
-*crear o inicializar objetos solo en el momento en el que seran requeridos en el codigo para minimizar el uso de memoria de su 
+
+*crear o inicializar objetos solo en el momento en el que seran requeridos en el codigo para minimizar el uso de memoria de su
 correspondiente impacto en el rendimiento.
-*las variables de una clase no deben ser publicas a menos que exista un buen motivo para ello.siempre seden definir como privadas o protegidas 
+*las variables de una clase no deben ser publicas a menos que exista un buen motivo para ello.siempre seden definir como privadas o protegidas
 y crear los correspondientes metodos de acceso.
 *para las variables locales siempre declararlas justo antes de ser usadas para que el codigo sea mas legible, menos propenso a errores y mantenible
 *siempre utilizar librerias estandar en lugar de desperdiciar tiempo creando propias, facilitando el reuso de codigo.
 *tener cuidado al utilizar objetos del tipo string ya que pueden afectar la memoria y reducir el rendimiento.
-*evitar sentencias "system.out" en metodos de clases 
+*evitar sentencias "system.out" en metodos de clases
 *siempre que se conozca iniciar las colecciones con el tamaño que van a requerir
- 
- 
- 
- Utilizar llamadas a metodos dentro de las condiciones ded un bucle solo cuando sea necesario, ya que consumen mucha memoria.
+
+Utilizar llamadas a metodos dentro de las condiciones ded un bucle solo cuando sea necesario, ya que consumen mucha memoria.
 Evitar el uso de bloques Try anidados. Los boloques Catch siempre van de lo mas especifico a lo mas generico.
 Analizar si conviene utilizar un If o un Switch según el caso. If será mejor para los casos complejos y los anidamientos mientras que Switch es mas ventajoso para el rendimeinto cuando las opciones no son complejas.
 Evitar el uso de sentencias que rompan el flujo secuencial de ejecucion (goto, break, continue). Estas sentencias dificultan la legibilidad, depuracion, y verificacion de programas.
-Utilizar un único return por metodo, colocado como sentencia final. 
+Utilizar un único return por metodo, colocado como sentencia final.
 Evitar metodos y funciones demaciado largas ya q dificultan su legibilidad, comprencion y mantenimiento.
 Evitar el reuso de codigo, encapsular estos bloques en una funcion o metodo e invocarla cuando se necesite.
 La funcion main siempre se ubica en una clase o modulo eeparado e independiente, ya que representa el punto de entrada de la aplicacion y su funcionalidad no pertenece a ninguno de los modulos o clases que conforman una aplicacion. Se recomienda nombrar a esta clase Runner o Launcher.
 Colocar al lado de una llave de cierre de bloque un comentario que indique qué tipo de bloque esta cerrando o el nombre del metodo o clase cuando corresponda.
 No utilizar caracteres propios del castellano, sino codificar en inglés o sustituir por adaptaciones (ñ = ni).
- 
 
+Bibliografía
+
+http://mmc.geofisica.unam.mx/acl/Herramientas/Java/ConvencionesCodigoJava1.pdf
+http://personales.unican.es/sanchezbp/teaching/faqs/programming.html
+http://www.decodigo.com/2013/04/mejores-practicas.html
+https://unpocodejava.com/2012/03/16/buenas-practicas-de-codificacion-en-java/
