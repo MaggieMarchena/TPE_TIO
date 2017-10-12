@@ -1,0 +1,30 @@
+SINTAXIS:
+
+Un código Java tiene la siguiente estructura:
+1- Comentario de comienzo
+2- Sentencias Package e import 
+3- Declaraciones de Clases e interfaces
+
+1- Los códigos deberían comenzar con un comentario que contenga datos sobre sus caracteristicas 
+2- La primer línea no comentada en un código es la sentencia Package, despúes puede haber tantas sentencias import como sea necesarias
+3- Las declaraciones de clases y/o interfaces debentener el siguiente orden: 
+  a) Comentario de documentación
+  b) Sentencia class o interface (se recomienda una declaración por línea)
+  c) Comentario sobre su implementación (si son necesarios)
+  d) Variables estáticas de clase (Public, Protected, Private).Se recomienda inicializar las variables cuando se declaran 
+  e) Variables de instancia (Public, Protectes, Private)
+  f) Constructores 
+  g) Métodos
+ 
+ Es importante, además, respetar un estilo de indentación a lo largo de todo el código, lo cual lo hace más legible para una persona.
+ No existe una covención sobre la cantidad de espacios, pero lo más usado es un tabulador de 8 espacios. 
+ 
+ Las sentencias return no deben usar parentesis a menos que hagan el contenido más claro para la lectura 
+ 
+ Las sentencias IF siempre llevan llave {}
+ 
+ Usar líneas en blanco, separando secciones de codigo relacionadas para mejorar la lectura.
+ 
+ 
+ 
+ 
