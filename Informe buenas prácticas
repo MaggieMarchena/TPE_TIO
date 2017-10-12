@@ -1,0 +1,11 @@
+Utilizar llamadas a metodos dentro de las condiciones ded un bucle solo cuando sea necesario, ya que consumen mucha memoria.
+Evitar el uso de bloques Try anidados. Los boloques Catch siempre van de lo mas especifico a lo mas generico.
+Analizar si conviene utilizar un If o un Switch según el caso. If será mejor para los casos complejos y los anidamientos mientras que Switch es mas ventajoso para el rendimeinto cuando las opciones no son complejas.
+Evitar el uso de sentencias que rompan el flujo secuencial de ejecucion (goto, break, continue). Estas sentencias dificultan la legibilidad, depuracion, y verificacion de programas.
+Utilizar un único return por metodo, colocado como sentencia final. 
+Evitar metodos y funciones demaciado largas ya q dificultan su legibilidad, comprencion y mantenimiento.
+Evitar el reuso de codigo, encapsular estos bloques en una funcion o metodo e invocarla cuando se necesite.
+La funcion main siempre se ubica en una clase o modulo eeparado e independiente, ya que representa el punto de entrada de la aplicacion y su funcionalidad no pertenece a ninguno de los modulos o clases que conforman una aplicacion. Se recomienda nombrar a esta clase Runner o Launcher.
+Colocar al lado de una llave de cierre de bloque un comentario que indique qué tipo de bloque esta cerrando o el nombre del metodo o clase cuando corresponda.
+No utilizar caracteres propios del castellano, sino codificar en inglés o sustituir por adaptaciones (ñ = ni).
+
