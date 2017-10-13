@@ -20,7 +20,7 @@ Estas buenas prácticas pueden dividirse en 2 grandes grupos: convenciones sobre
 que influyen en el rendimiento del software.
 
 
-##**SINTAXIS:**
+## **SINTAXIS:**
 
 Un código Java tiene la siguiente estructura:
 1. Comentario de comienzo.
@@ -55,7 +55,7 @@ siempre deben estar completamente en mayúscula con sus palabras separadas por u
 **Uso de Paréntesis:**
 Se recomienda utilizar "()" para separar expresiones en una sentencia lógica para que quede claro el órden de precedencia de los operadores.
 
-##**RENDIMIENTO:**
+## **RENDIMIENTO:**
 
 * Crear o inicializar objetos solo en el momento en el que serán requeridos en el código para minimizar el uso de memoria de su
 correspondiente impacto en el rendimiento.
